@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charts - Bike Trip Analysis</title>
+    <link rel="stylesheet" href="static/css/main.css">
+    <link rel="stylesheet" href="static/css/charts.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="info.html">Info</a></li>
+        <li><a href="maps.html">Maps</a></li>
+        <li><a href="charts.html">Charts</a></li>
+    </ul>
+</nav>
+
+<div class="section">
+    <h1>Data Visualizations</h1>
+    <div class="chart-controls">
+        <label for="chart-filter">Select Data:</label>
+        <select id="chart-filter">
+            <option value="userType">User Type</option>
+            <option value="gender">Gender</option>
+            <option value="birthYear">Birth Year</option>
+        </select>
+    </div>
+
+    <div id="chart-container">Loading charts...</div>
+</div>
+
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script src="static/js/charts.js"></script>
+</body>
+</html>

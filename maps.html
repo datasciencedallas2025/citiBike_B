@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maps - Bike Trip Analysis</title>
+    <link rel="stylesheet" href="static/css/main.css">
+    <link rel="stylesheet" href="static/css/maps.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
+</head>
+<body>
+
+<nav class="navbar">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="info.html">Info</a></li>
+        <li><a href="maps.html">Maps</a></li>
+        <li><a href="charts.html">Charts</a></li>
+    </ul>
+</nav>
+
+<div class="section">
+    <h1>Interactive Maps with Filters</h1>
+
+    <div class="map-controls">
+        <label for="data-filter">Select Filter:</label>
+        <select id="data-filter">
+            <option value="all">All Data</option>
+            <option value="userType">User Type</option>
+            <option value="birthYear">Birth Year</option>
+            <option value="gender">Gender</option>
+            <option value="tripDuration">Trip Duration</option>
+        </select>
+    </div>
+
+    <div id="map-container" style="height: 600px;">Loading map...</div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet.heat/dist/leaflet-heat.js"></script>
+<script src="static/js/maps.js"></script>
+</body>
+</html>
